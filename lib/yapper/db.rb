@@ -1,4 +1,5 @@
 motion_require 'yapper'
+motion_require 'attribute'
 
 class Yapper::DB
   @@queue = Dispatch::Queue.new("#{NSBundle.mainBundle.bundleIdentifier}.yapper.db")

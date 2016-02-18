@@ -1,3 +1,5 @@
+motion_require 'attribute'
+
 module Yapper::Document
   module Persistence
     extend YapperSupport::Concern
