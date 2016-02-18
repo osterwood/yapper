@@ -1,6 +1,6 @@
 module Yapper::Document
   module Selection
-    extend MotionSupport::Concern
+    extend YapperSupport::Concern
 
     module ClassMethods
       def all(options={})

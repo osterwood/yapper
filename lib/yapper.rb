@@ -3,9 +3,6 @@ unless defined?(Motion::Project::Config)
 end
 
 require 'motion-require'
-require 'motion-support/concern'
-require 'motion-support/inflector'
-require 'motion-support/core_ext'
 
 files = Dir.glob(File.expand_path('../../lib/yapper/**/*.rb', __FILE__))
 Motion::Require.all(files)

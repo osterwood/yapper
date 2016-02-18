@@ -7,7 +7,7 @@ module Yapper::Document
   motion_require 'document/relation'
   motion_require 'document/selection'
 
-  extend MotionSupport::Concern
+  extend YapperSupport::Concern
 
   include Persistence
   include Selection

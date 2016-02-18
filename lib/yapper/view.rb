@@ -1,5 +1,5 @@
 module Yapper::View
-  extend MotionSupport::Concern
+  extend YapperSupport::Concern
 
   module ClassMethods
     def view(version, &block)

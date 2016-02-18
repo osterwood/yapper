@@ -1,7 +1,7 @@
 motion_require 'document.rb'
 
 module Yapper::Timestamps
-  extend MotionSupport::Concern
+  extend YapperSupport::Concern
 
   included do
     field :updated_at, :type => Time

@@ -1,6 +1,6 @@
 module Yapper::Document
   module Relation
-    extend MotionSupport::Concern
+    extend YapperSupport::Concern
 
     included do
       class << self

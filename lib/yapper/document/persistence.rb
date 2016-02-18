@@ -1,6 +1,6 @@
 module Yapper::Document
   module Persistence
-    extend MotionSupport::Concern
+    extend YapperSupport::Concern
 
     included do
       attr_accessor :attributes
@@ -182,7 +182,7 @@ module Yapper::Document
       self.fields.each do |field, field_options|
         if __send__(field).nil?
           default = field_options[:default].respond_to?(:call) ? field_options[:default].call : field_options[:default]
-          set_attribute(field, default) 
+          set_attribute(field, default)
         end
       end
     end

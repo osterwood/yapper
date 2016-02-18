@@ -17,7 +17,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Yapper::VERSION
 
-  gem.add_dependency 'motion-support', '~> 0.3.0'
   gem.add_dependency 'motion-cocoapods', '~> 1.7.0'
   gem.add_dependency 'motion-logger', '~> 0.1.0'
   gem.add_development_dependency 'motion-redgreen', '~> 0.1'

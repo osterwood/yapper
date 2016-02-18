@@ -1,6 +1,6 @@
 module Yapper::Document
   module Callbacks
-    extend MotionSupport::Concern
+    extend YapperSupport::Concern
 
     included do
       class << self
