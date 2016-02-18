@@ -4,7 +4,15 @@ module Yapper::Settings
   PREFIX = 'yapper-'
   extend self
 
-  mattr_accessor :db_version
+  @@db_version = nil unless defined? @@db_version
+
+  def self.db_version
+    @@db_version || 0
+  end
+
+  def self.db_version=(db_version)
+    @@db_version = db_version
+  end
 
   def get(key)
     value = storage.objectForKey(storage_key(key))

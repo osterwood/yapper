@@ -4,7 +4,15 @@ module Yapper::Config
   COLLECTION = '_config'
   extend self
 
-  mattr_accessor :db_version
+  @@db_version = nil unless defined? @@db_version
+
+  def self.db_version
+    @@db_version || 0
+  end
+
+  def self.db_version=(db_version)
+    @@db_version = db_version
+  end
 
   def self.get(key)
     Yapper::DB.instance.execute do |txn|
