@@ -1,3 +1,5 @@
+motion_require 'attribute_accessors'
+
 class Yapper::Watch
   cattr_accessor :_observer
   cattr_accessor :watches do
