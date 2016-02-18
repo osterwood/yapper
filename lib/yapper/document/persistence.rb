@@ -1,4 +1,4 @@
-motion_require 'attribute'
+motion_require '../attribute'
 
 module Yapper::Document
   module Persistence
