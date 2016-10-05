@@ -10,6 +10,10 @@ require 'yapper'
 Motion::Project::App.setup do |app|
   app.name = 'Yapper'
   app.redgreen_style = :full
+  
+  app.pods do
+     pod 'NSData+MD5Digest'
+  end
 end
 
 desc "Build the gem"
