@@ -1,6 +1,6 @@
 class BSON
   class ObjectId
-    @@machine_id = Digest::MD5.hexdigest(UIDevice.currentDevice.identifierForVendor.UUIDString.dataUsingEncoding(NSUTF8StringEncoding)).unpack("N")[0]
+    @@machine_id = NSData.MD5HexDigest(UIDevice.currentDevice.identifierForVendor.UUIDString.dataUsingEncoding(NSUTF8StringEncoding)).unpack("N")[0]
 
     @@mutex = Mutex.new
     @@counter = 0
