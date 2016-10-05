@@ -1,5 +1,3 @@
-require 'digest'
-
 class BSON
   class ObjectId
     @@machine_id = Digest::MD5.hexdigest(UIDevice.currentDevice.identifierForVendor.UUIDString.dataUsingEncoding(NSUTF8StringEncoding)).unpack("N")[0]
