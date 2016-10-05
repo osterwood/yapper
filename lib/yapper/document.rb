@@ -61,6 +61,10 @@ module Yapper::Document
   def db
     self.class.db
   end
+  
+  def key
+    id
+  end
 
   def model_name
     self.class.model_name
